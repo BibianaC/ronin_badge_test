@@ -5,7 +5,7 @@ Feature: Starting the game
 
   Scenario: Registering the first player
     Given I am on the homepage
-    When I follow "Let's play!"
+    When I follow "start"
     Then I should see "What's your name?"
     When I enter my name "Bibiana"
     Then I press "submit"
