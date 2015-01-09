@@ -1,13 +1,25 @@
-<div>		
+<!DOCTYPE html>
+<html>
 
-	<% if @name && !@name.empty? %>
-		Let's start <%= @name %>!
-	<% else %>
-		<form action ="/game" method="post">
-			What's your name?
-			<input type="text" name="name">
-			<input type="submit" value="submit">
-		</form>
-	<% end %>
+  <head>		
 
-</div>
+  	<% if @name && !@name.empty? %>
+      <a href = '/start_game'>Let's start <%= @name %>!</a>
+
+  	<% else %>
+  		<form action ="/game" method="post">
+  			What's your name?
+  			<input type="text" name="name">
+  			<input type="submit" value="submit">
+  		</form>
+  	<% end %>
+
+  </head>
+
+  <section>
+    <a id="rock" href="/start_game?choice=rock"><img width=10% src="images/rock.png"/></a>
+    <a id="paper" href="/start_game?choice=paper"><img width=10% src="images/paper.png"/></a>
+    <a id="scissor" href="/start_game?choice=scissors"><img width=10% src="images/scissors.png"/></a>
+  </section>
+
+</html>

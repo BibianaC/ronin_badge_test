@@ -10,3 +10,10 @@ Feature: Starting the game
     When I enter my name "Bibiana"
     Then I press "submit"
     Then I should see "Let's start Bibiana!"
+
+  Scenario: Playing a single player game
+    Given I am on the game page
+    When I follow "rock"
+    Then I should see "lose", "win" or "draw"
+
+
