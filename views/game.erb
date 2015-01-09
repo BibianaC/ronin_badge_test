@@ -1,0 +1,13 @@
+<div>		
+
+	<% if @name && !@name.empty? %>
+		Let's start <%= @name %>!
+	<% else %>
+		<form action ="/game" method="post">
+			What's your name?
+			<input type="text" name="name">
+			<input type="submit" value="submit">
+		</form>
+	<% end %>
+
+</div>
