@@ -6,10 +6,9 @@ Feature: Starting the game
   Scenario: Registering the first player
     Given I am on the homepage
     When I follow "start"
-    Then I should see "What's your name?"
-    When I enter my name "Bibiana"
+    And I enter my name "Bibiana"
     Then I press "submit"
-    Then I should see "Let's start Bibiana!"
+    Then I should see "Choose an option Bibiana"
 
   Scenario: Playing a single player game
     Given I am on the game page

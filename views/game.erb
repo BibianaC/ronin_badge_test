@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-  <head>		
-
-  	<% if @name && !@name.empty? %>
-      Let's start <%= @name %>!</a>
-
-  	<% else %>
-  		<form action ="/game" method="post">
-  			What's your name?
-  			<input type="text" name="name">
-  			<input type="submit" value="submit">
-  		</form>
-  	<% end %>
-
+  <head>	
+    <title>RPS</title>
+    <link href="/style.css" rel="stylesheet">
   </head>
 
-  <section>
-    <a id="rock" href="/start_game?choice=rock"><img width=10% src="images/rock6.png"/></a>
-    <a id="paper" href="/start_game?choice=paper"><img width=10% src="images/paper.png"/></a>
-    <a id="scissor" href="/start_game?choice=scissors"><img width=10% src="images/scissors.png"/></a>
-  </section>
+  <body>
+    <section>	
+    	<% if @name && !@name.empty? %>
+        Choose an option <%= @name %>
+
+    	<% else %>
+    		<form action ="/game" method="post">
+    			<input type="text" name="name" placeholder="What's your name?">
+    			<input id="submit" type="submit" value="submit">
+    		</form>
+    	<% end %>
+    </section>
+
+    <section>
+      <a id="rock" href="/start_game?choice=rock"><img width=10% src="images/rock6.png"/></a>
+      <a id="paper" href="/start_game?choice=paper"><img width=10% src="images/paper.png"/></a>
+      <a id="scissor" href="/start_game?choice=scissors"><img width=10% src="images/scissors.png"/></a>
+    </section>
+  </body>
 
 </html>
