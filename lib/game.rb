@@ -1,9 +1,13 @@
 class Game
 
-  attr_reader :player
+  attr_reader :players, :player
 
   def initialize
-    @player = false
+    @players = []
+  end
+
+  def add!(player)
+    @players << player
   end
 
 end
