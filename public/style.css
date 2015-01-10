@@ -35,6 +35,7 @@
   text-align: center;
   padding-bottom: 20px;
   padding-top: 40px;
+  font-size: 35px;
 }
 
 #placeholder {
@@ -49,4 +50,22 @@
   color: #F5DEB3;
   margin-bottom: .5em;
   opacity: .5;
+}
+
+/* -------------
+     ICONS
+--------------*/
+
+.icons_section {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.icons {
+  width: 15%;
+  border-radius: 15%;
+  opacity: .6;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
