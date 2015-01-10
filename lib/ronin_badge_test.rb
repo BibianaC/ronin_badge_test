@@ -24,19 +24,19 @@ class RoninBadgeTest < Sinatra::Base
     @computer_choice = ["rock", "paper", "scissors"].sample
 
     if @player_choice == @computer_choice
-      @outcome = "draw"
+      @outcome = "It's a draw"
     elsif @player_choice == "rock" && @computer_choice == "paper"
-      @outcome = "lose"
+      @outcome = "You lose"
     elsif @player_choice == "rock" && @computer_choice == "scissors"
-      @outcome = "win"
+      @outcome = "You win"
     elsif @player_choice == "paper" && @computer_choice == "rock"
-      @outcome = "win"
+      @outcome = "You win"
     elsif @player_choice == "paper" && @computer_choice == "scissors"
-      @outcome = "lose"
+      @outcome = "You lose"
     elsif @player_choice == "scissors" && @computer_choice == "rock"
-      @outcome = "lose"
+      @outcome = "You lose"
     elsif @player_choice == "scissors" && @computer_choice == "paper"
-      @outcome = "win"
+      @outcome = "You win"
     else
       @outcome = "error"
     end
