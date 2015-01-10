@@ -78,8 +78,8 @@
   text-align: center;
   color: #F5DEB3;
   font-family: "Andale Mono", "Lucida Console";
-  margin: 3.5em;
-  padding: 2em;
+  margin: 3em;
+  padding: 1em;
 }
 
 .player_choice {
@@ -91,7 +91,7 @@
 .outcome {
   padding: 0.5em;
   border: 1px solid #FF00FF;
-  margin-top: 10%;
+  margin: 5%;
   font-size: 150%;
   font-weight: bold;
   text-transform: uppercase;
@@ -100,4 +100,11 @@
 }
 span {
   color: #E6E6FA;
+}
+
+#try_again {
+  max-width: 10%;
+  margin-top: 5%;
+  padding-top: 0.5em;
+  border-radius: 50%;
 }
