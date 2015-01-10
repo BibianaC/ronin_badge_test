@@ -15,4 +15,9 @@ Feature: Starting the game
     When I follow "rock"
     Then I should see "lose", "win" or "draw"
 
+  Scenario: Being able to try again
+    Given I am on the start game page
+    When I follow "try_again"
+    Then I should be on the game page
+
 
