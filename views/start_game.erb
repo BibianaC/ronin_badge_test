@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-You chose <%= @player_choice %>
-The computer chose <%= @computer_choice %>
+  <head>  
+    <title>RPS</title>
+    <link href="/style.css" rel="stylesheet">
+  </head>
 
-Outcome <%= @outcome %>
+  <body>
+    You chose: <%= @player_choice %></br>
+    The computer chose: <%= @computer_choice %></br>
+
+    Outcome: <%= @outcome %>
+  </body>
 
 </html>
