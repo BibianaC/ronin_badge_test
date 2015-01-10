@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html class="index">
 
   <head>  
     <title>RPS</title>
     <link href="/style.css" rel="stylesheet">
   </head>
 
-  <body>
-    You chose: <%= @player_choice %></br>
-    The computer chose: <%= @computer_choice %></br>
-
-    Outcome: <%= @outcome %>
+  <body class="result">
+    <section class ="player_choice">
+      You chose: <span><%= @player_choice %></span></br>
+    </section>
+    <section class ="computer_choice">
+      The computer chose: <span><%= @computer_choice %></span></br>
+    </section>
+    <section class="outcome">
+      <%= @outcome %>!
+    </section>
   </body>
 
 </html>

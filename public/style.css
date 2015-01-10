@@ -69,3 +69,35 @@
   opacity: .6;
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
+
+/* ------------
+    RESULT
+--------------*/
+
+.result {
+  text-align: center;
+  color: #F5DEB3;
+  font-family: "Andale Mono", "Lucida Console";
+  margin: 3.5em;
+  padding: 2em;
+}
+
+.player_choice {
+  padding: 0.5em;
+}
+.computer_choice {
+  padding: 0.5em;
+}
+.outcome {
+  padding: 0.5em;
+  border: 1px solid #FF00FF;
+  margin-top: 10%;
+  font-size: 150%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #008B8B;
+  letter-spacing: 8px;
+}
+span {
+  color: #E6E6FA;
+}
