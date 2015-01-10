@@ -12,4 +12,10 @@ describe Game do
     game.add!(player)
     expect(game.players).not_to be_empty
   end
+
+  it 'should have max two players' do
+    game.add!(player)
+    game.add!(player)
+    expect(lambda{ game.add!(player) }).to raise_error(RuntimeError, 'Only two players are allowed')
+  end
 end

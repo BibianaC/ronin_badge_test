@@ -8,6 +8,7 @@ class Game
 
   def add!(player)
     @players << player
+    raise "Only two players are allowed" if @players.length > 2
   end
 
 end
