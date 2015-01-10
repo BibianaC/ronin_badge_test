@@ -23,3 +23,30 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* -------------
+   GAME PAGE 
+---------------*/
+
+.name {
+  color: #F5DEB3;
+  font-family: "Andale Mono", "Lucida Console";
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+#placeholder {
+  text-align: center;
+  width: 200px;
+  background-color: #66CDAA;
+  font-size: 20px;
+  border: none;
+  border-bottom: dashed 1.5px #FFF;
+  outline: none;
+  padding: .3em;
+  color: #F5DEB3;
+  margin-bottom: .5em;
+  opacity: .5;
+}

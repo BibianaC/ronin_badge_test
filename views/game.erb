@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="index">
 
   <head>	
     <title>RPS</title>
@@ -7,13 +7,13 @@
   </head>
 
   <body>
-    <section>	
+    <section class="name">	
     	<% if @name && !@name.empty? %>
         Choose an option <%= @name %>
 
     	<% else %>
     		<form action ="/game" method="post">
-    			<input type="text" name="name" placeholder="What's your name?">
+    			<input id="placeholder" type="text" name="name" placeholder="What's your name?">
     			<input id="submit" type="submit" value="submit">
     		</form>
     	<% end %>
