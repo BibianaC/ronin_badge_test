@@ -38,38 +38,38 @@ describe Game do
 
   it 'should raise an error if the choice is added for a player that is not in the game' do
     player_test = Player.new('Bibiana')
-    expect(lambda { game.choose(player_test, 'rock') }).to raise_error(RuntimeError, "The player #{player.name} is not part of the game")
+    expect(lambda { game.choose(player_test.object_id, 'rock') }).to raise_error(RuntimeError, "This player is not part of the game")
   end
 
   it 'should say it is a draw if the two players have the same choice' do
     game.add!(player)
-    game.choose(player, 'rock')
+    game.choose(player.object_id, 'rock')
     game.add!(player2)
-    game.choose(player2, 'rock')
+    game.choose(player2.object_id, 'rock')
     expect(game.result).to eq('It\'s a draw')
   end
 
   it 'rock defeats scissors' do
     game.add!(player)
-    game.choose(player, 'rock')
+    game.choose(player.object_id, 'rock')
     game.add!(player2)
-    game.choose(player2, 'scissors')
+    game.choose(player2.object_id, 'scissors')
     expect(game.result).to eq("#{player.name} wins")
   end
 
   it 'paper defeats rock' do
     game.add!(player)
-    game.choose(player, 'rock')
+    game.choose(player.object_id, 'rock')
     game.add!(player2)
-    game.choose(player2, 'paper')
+    game.choose(player2.object_id, 'paper')
     expect(game.result).to eq("#{player2.name} wins")
   end
 
   it 'scissors defeats paper' do
     game.add!(player)
-    game.choose(player, 'paper')
+    game.choose(player.object_id, 'paper')
     game.add!(player2)
-    game.choose(player2, 'scissors')
+    game.choose(player2.object_id, 'scissors')
     expect(game.result).to eq("#{player2.name} wins")
   end
 

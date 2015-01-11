@@ -19,14 +19,14 @@ class Game
     end
   end
 
-  def choose(player, choice)
+  def choose(player_id, choice)
     raise "#{choice} is not a valid choice" if !is_valid?(choice)
-    if @players[0] == player
+    if @players[0].object_id == player_id
       @player1_choice = choice 
-    elsif @players[1] == player
+    elsif @players[1].object_id == player_id
       @player2_choice = choice
     else
-      raise "The player #{player.name} is not part of the game"
+      raise "This player is not part of the game"
     end
   end
 
