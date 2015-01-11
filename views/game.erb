@@ -8,8 +8,8 @@
 
   <body>
     <section class="name">	
-    	<% if @name && !@name.empty? %>
-        Choose an option <%= @name %>
+    	<% if !@player.nil?  %>
+        Choose an option <%= @player.name %>
 
     	<% else %>
     		<form action ="/game" method="post">
