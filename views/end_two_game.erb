@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="index">
+
+  <head>  
+    <title>RPS</title>
+    <link href="/style.css" rel="stylesheet">
+  </head>
+
+  <body class="result">
+    <section class ="player_choice">
+      <%= @name1 %> chose: <span><%= @choice1 %></span></br>
+    </section>
+    <section class ="computer_choice">
+      <%= @name2 %> chose: <span><%= @choice2 %></span></br>
+    </section>
+    <section class="outcome">
+      <%= @outcome %>!
+    </section>
+  </body>
+
+  <footer>
+    <a id="try_again" href="/two_players_game"><img id="try_again" src="images/try_again.jpg"/></a>
+  </footer>
+
+</html>

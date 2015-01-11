@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="index">
+
+  <head>	
+    <title>RPS</title>
+    <link href="/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="name">	
+    	<% if !@player.nil? %>
+       Choose an option <%= @player.name %>
+    	<% else %>
+    		<form action ="/two_players_game" method="post">
+    			<input id="placeholder" type="text" name="name" placeholder="What's your name?">
+    			<input id="submit" type="submit" value="submit">
+    		</form>
+    	<% end %>
+    </section>
+
+    <section class="icons_section">
+      <a id="rock" href="/end_two_game?choice=rock"><img class="icons" src="images/rock6.png"/></a>
+      <a id="paper" href="/end_two_game?choice=paper"><img class="icons" src="images/paper.png"/></a>
+      <a id="scissor" href="/end_two_game?choice=scissors"><img class="icons" src="images/scissors.png"/></a>
+    </section>
+  </body>
+
+</html>

@@ -1,6 +1,6 @@
 class Game
 
-  attr_reader :players, :player
+  attr_reader :players, :player, :player1_choice, :player2_choice
 
   def initialize
     @players = []
