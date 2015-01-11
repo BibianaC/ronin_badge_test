@@ -30,26 +30,16 @@ class Game
     end
   end
 
-  # def result
-  #   if @player1_choice == nil || @player2_choice == nil
-  #     return "Player choices are not set up"
-  #   elsif @player1_choice == @player2_choice
-  #     return "It's a draw"
-  #   elsif @player1_choice == "rock" && @player2_choice == "paper"
-  #     return "#{players[0].name} lose"
-  #   elsif @player1_choice == "rock" && @player2_choice == "scissors"
-  #     return "You win"
-  #   elsif @player1_choice == "paper" && @player2_choice == "rock"
-  #     return "You win"
-  #   elsif @player1_choice == "paper" && @player2_choice == "scissors"
-  #     return "You lose"
-  #   elsif @player1_choice == "scissors" && @player2_choice == "rock"
-  #     return "You lose"
-  #   elsif @player1_choice == "scissors" && @player2_choice == "paper"
-  #     return "You win"
-  #   else
-  #     return "error"
-  #   end
-  # end
+  def result
+    if @player1_choice == nil || @player2_choice == nil
+      "Player choices are not set up"
+    elsif @player1_choice == @player2_choice
+      "It's a draw"
+    elsif (@player1_choice == "rock" && @player2_choice == "scissors") || (@player1_choice == "paper" && @player2_choice == "rock") || (@player1_choice == "scissors" && @player2_choice == "paper")
+      "#{@players[0].name} wins"
+    else
+      "#{@players[1].name} wins"
+    end
+  end
 
 end

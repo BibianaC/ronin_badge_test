@@ -41,12 +41,36 @@ describe Game do
     expect(lambda { game.choose(player_test, 'rock') }).to raise_error(RuntimeError, "The player #{player.name} is not part of the game")
   end
 
-  xit 'should say it is a draw if the two players have the same choice' do
+  it 'should say it is a draw if the two players have the same choice' do
     game.add!(player)
     game.choose(player, 'rock')
     game.add!(player2)
     game.choose(player2, 'rock')
     expect(game.result).to eq('It\'s a draw')
+  end
+
+  it 'rock defeats scissors' do
+    game.add!(player)
+    game.choose(player, 'rock')
+    game.add!(player2)
+    game.choose(player2, 'scissors')
+    expect(game.result).to eq("#{player.name} wins")
+  end
+
+  it 'paper defeats rock' do
+    game.add!(player)
+    game.choose(player, 'rock')
+    game.add!(player2)
+    game.choose(player2, 'paper')
+    expect(game.result).to eq("#{player2.name} wins")
+  end
+
+  it 'scissors defeats paper' do
+    game.add!(player)
+    game.choose(player, 'paper')
+    game.add!(player2)
+    game.choose(player2, 'scissors')
+    expect(game.result).to eq("#{player2.name} wins")
   end
 
 end
