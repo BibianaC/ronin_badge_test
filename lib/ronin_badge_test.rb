@@ -57,6 +57,7 @@ class RoninBadgeTest < Sinatra::Base
     @choice1 = game.player1_choice
     @choice2 = game.player2_choice
     @outcome = game.result
+    session.clear
     erb :end_two_game
   end
 
