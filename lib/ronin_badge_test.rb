@@ -50,7 +50,7 @@ class RoninBadgeTest < Sinatra::Base
   get '/end_two_game' do
     @player_choice = game.choose(session[:player], params[:choice])
     if game.player1_choice == nil || game.player2_choice == nil
-      return "Wait"
+      redirect "/wait"
     end
     @name1 = game.players[0].name
     @name2 = game.players[1].name
@@ -58,6 +58,10 @@ class RoninBadgeTest < Sinatra::Base
     @choice2 = game.player2_choice
     @outcome = game.result
     erb :end_two_game
+  end
+
+  get '/wait' do
+    erb :wait
   end
 
 
