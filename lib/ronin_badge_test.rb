@@ -15,15 +15,15 @@ class RoninBadgeTest < Sinatra::Base
     erb :index
   end
 
-  get '/game' do
-    erb :game
+  get '/one_player_game' do
+    erb :one_player_game
   end
 
-  post '/game' do
+  post '/one_player_game' do
     @player = Player.new(params[:name])
     game.add!(@player)
     game.add!(Player.new('Computer'))
-    erb :game
+    erb :one_player_game
   end
 
   get '/two_players_game' do

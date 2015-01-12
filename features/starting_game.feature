@@ -11,16 +11,16 @@ Feature: Starting the game
     Then I should see "Choose an option Bibiana"
 
   Scenario: Playing a single player game
-    Given I am on the game page
+    Given I am on the one player game page
     When I follow "rock"
     Then I should see "lose", "win" or "draw"
 
   Scenario: Being able to try again
-    Given I am on the game page
+    Given I am on the one player game page
     When I follow "rock"
     Then I should see "lose", "win" or "draw"
     When I follow "try_again"
-    Then I should be on the game page
+    Then I should be on the one player game page
 
   Scenario: Waiting in two players game
     Given I am on the homepage

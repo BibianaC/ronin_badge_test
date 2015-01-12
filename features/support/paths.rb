@@ -13,8 +13,8 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
-    when /the game\s?page/
-      '/game'
+    when /the one\s?player\s?game\s?page/
+      '/one_player_game'
 
     when /the start\s?game\s?page/
       '/start_game'
