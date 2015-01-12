@@ -8,10 +8,6 @@ describe Player do
     expect(player).to have_name
   end
 
-  it 'should be initialize with an empty score' do
-    expect(player.score).to eq(0)
-  end
-
   it 'should be able to choose' do
     player.choose('rock')
     expect(player.choice).to eq 'rock'

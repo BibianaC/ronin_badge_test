@@ -4,7 +4,6 @@ class Player
 
   def initialize(name)
     @name = name
-    @score = 0
   end
 
   def has_name?
@@ -12,7 +11,7 @@ class Player
   end
 
   def choose(choice)
-    @choice = 'rock' || @choice = 'paper' || @choice = 'scissors'
+    @choice = choice
   end
 
 end
