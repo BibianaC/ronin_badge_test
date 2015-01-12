@@ -30,11 +30,17 @@
 }
 .index_link {
   text-decoration: none;
-  color: #F5DEB3;
+  color: #FFD700;
   font-family: "Andale Mono", "Lucida Console";
   font-size: 80%;
   padding: 20px;
 
+}
+
+a.index_link:hover {
+  color: #F5DEB3;
+  background-color: transparent;
+  font-weight: 900;
 }
 
 /* -------------
@@ -92,7 +98,7 @@
   font-family: "Andale Mono", "Lucida Console";
   margin: auto;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 4s0px;
   padding-top: 120px;
   font-size: 25px;
 }
