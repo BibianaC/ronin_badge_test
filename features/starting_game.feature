@@ -22,4 +22,12 @@ Feature: Starting the game
     When I follow "try_again"
     Then I should be on the game page
 
+  Scenario: Waiting in two players game
+    Given I am on the homepage
+    When I follow "start_two"
+    And I enter my name "Bibiana"
+    And you enter your name "Serafeim"
+    When "Bibiana" follow "rock"
+    Then "Bibiana" should see "Please wait till your opponent makes a choice"
+
 
