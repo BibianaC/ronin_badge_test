@@ -40,11 +40,11 @@ class RoninBadgeTest < Sinatra::Base
     erb :two_players_game
   end
 
-  get '/start_game' do
+  get '/end_one_game' do
     @player_choice = game.choose(game.players[0].object_id, params[:choice])
     @computer_choice = game.choose(game.players[1].object_id, ["rock", "paper", "scissors"].sample)
     @outcome = game.result
-    erb :start_game
+    erb :end_one_game
   end
 
   get '/end_two_game' do
