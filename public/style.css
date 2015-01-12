@@ -11,17 +11,30 @@
   font-family: "Andale Mono", "Lucida Console";
 	margin: auto;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   padding-top: 20px;
 }
 
 .index_image {
 	width: 50%;
-  padding-top: 10px;
   border-radius: 25px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.index_links {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.index_link {
+  text-decoration: none;
+  color: #F5DEB3;
+  font-family: "Andale Mono", "Lucida Console";
+  font-size: 80%;
+  padding: 20px;
+
 }
 
 /* -------------
