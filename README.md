@@ -50,6 +50,9 @@ Week 3 challenge at Makers Academy
 
 ## Resources
 
+- Ruby
+- Sinatra
+
 - Bundle
 - Capybara
 - Cucumber
@@ -57,8 +60,6 @@ Week 3 challenge at Makers Academy
 - IRB
 - Rackup
 - Rspec
-- Ruby
-- Sinatra
 - Shotgun
 
 ## Installation
