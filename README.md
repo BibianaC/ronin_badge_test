@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/BibianaC/ronin_badge_test/badges/gpa.svg)](https://codeclimate.com/github/BibianaC/ronin_badge_test)
+[![Test Coverage](https://codeclimate.com/github/BibianaC/ronin_badge_test/badges/coverage.svg)](https://codeclimate.com/github/BibianaC/ronin_badge_test)
 
 ## Challenge: Rōnin Badge Test
 
@@ -13,13 +15,9 @@ As always you can use google your notes and everything else. This is a challenge
 
 Rōnin BANZAI!!!!
 
-### Bonus 1: Multiplayer
+### Bonus: Multiplayer
 
 Change the game so that two marketeers can play against each other ( yes there are two of them ).
-
-### Bonus 2: Rock, Paper, Scissors, Spock, Lizard
-
-Use the special rules ( you can find them here http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock )
 
 #### Basic Rules
 

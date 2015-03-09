@@ -1,5 +1,8 @@
 require 'player'
 
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+
 describe Player do
 	
   let(:player) {Player.new('Bibiana')}

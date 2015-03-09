@@ -1,0 +1,26 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/Bibs/Documents/MakersAcademy/ronin_badge_test/lib/player.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        13,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1425911358
+  }
+}

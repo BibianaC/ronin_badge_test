@@ -10,3 +10,5 @@ group :development, :test do
   gem 'rspec'
   gem 'shotgun'
 end
+
+gem "codeclimate-test-reporter", group: :test, require: nil
