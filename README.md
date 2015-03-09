@@ -8,17 +8,17 @@
 <div align="center">
   <img width="80%" src="screen_shots/Screen_Shot_01_front.png">
 </div>
-<div align="left">
-  <img width="50%" src="screen_shots/Screen_Shot_02.png">
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_02.png">
 </div>
-<div align="right">
-  <img width="50%" src="screen_shots/Screen_Shot_03_options.png">
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_03_options.png">
 </div>
-<div align="left">
-  <img width="50%" src="screen_shots/Screen_Shot_04_wait.png">
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_04_wait.png">
 </div>
-<div align="right">
-  <img width="50%" src="screen_shots/Screen_Shot_05_winner.png">
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_05_winner.png">
 </div>
 
 # Task
