@@ -21,9 +21,9 @@ Change the game so that two marketeers can play against each other ( yes there a
 
 #### Basic Rules
 
-Rock beats Scissors
-Scissors beats Paper
-Paper beats Rock
+- Rock beats Scissors
+- Scissors beats Paper
+- Paper beats Rock
 
 ## Preview
 
