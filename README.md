@@ -1,27 +1,9 @@
 [![Code Climate](https://codeclimate.com/github/BibianaC/ronin_badge_test/badges/gpa.svg)](https://codeclimate.com/github/BibianaC/ronin_badge_test)
 [![Test Coverage](https://codeclimate.com/github/BibianaC/ronin_badge_test/badges/coverage.svg)](https://codeclimate.com/github/BibianaC/ronin_badge_test)
 
-## Challenge: Rōnin Badge Test
+# Challenge: Rōnin Badge Test
 
-## Screenshot
-
-<div align="center">
-  <img width="80%" src="screen_shots/Screen_Shot_01_front.png">
-</div>
-<div align="center">
-  <img width="80%" src="screen_shots/Screen_Shot_02.png">
-</div>
-<div align="center">
-  <img width="80%" src="screen_shots/Screen_Shot_03_options.png">
-</div>
-<div align="center">
-  <img width="80%" src="screen_shots/Screen_Shot_04_wait.png">
-</div>
-<div align="center">
-  <img width="80%" src="screen_shots/Screen_Shot_05_winner.png">
-</div>
-
-# Task
+## Task
 Provide a Rock, Paper, Scissors game for the Makers Academy Marketing Array ( MAMA ) so they can play on the web with the following features:
 
 the marketeer has to enter their name before the game
@@ -43,6 +25,25 @@ Rock beats Scissors
 Scissors beats Paper
 Paper beats Rock
 
+## Preview
+
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_01_front.png">
+</div>
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_02.png">
+</div>
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_03_options.png">
+</div>
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_04_wait.png">
+</div>
+<div align="center">
+  <img width="80%" src="screen_shots/Screen_Shot_05_winner.png">
+</div>
+
+Deployed on [Heroku](https://my-rock-paper-scissors.herokuapp.com/)
 
 ## Context
 
